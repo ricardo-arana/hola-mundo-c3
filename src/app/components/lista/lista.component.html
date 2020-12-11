@@ -1,6 +1,4 @@
-<div class="m-3">
-    <div class="group-control" style="max-width: 200px;">
-        <input type="text" class="form-control" placeholder="Ingrese un item" #itemForm (keyup.enter)="agregar(itemForm.value)" >
+<div class="m-3   w-50">
+    <app-lista-input (value)="agregar($event)"></app-lista-input>
         <app-lista-body [items]="items" (salida)="eliminar($event)" ></app-lista-body>
-    </div>
-</div>
+ </div>

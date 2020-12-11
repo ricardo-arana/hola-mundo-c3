@@ -6,6 +6,9 @@ import { HolaMundoComponent } from './components/hola-mundo/hola-mundo.component
 import { SaludadorComponent } from './components/saludador/saludador.component';
 import { ListaComponent } from './components/lista/lista.component';
 import { ListaBodyComponent } from './components/lista-body/lista-body.component';
+import { ListaInputComponent } from './components/lista-input/lista-input.component';
+import { FormsModule } from '@angular/forms';
+import { FormularioComponent } from './components/formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +16,13 @@ import { ListaBodyComponent } from './components/lista-body/lista-body.component
     HolaMundoComponent,
     SaludadorComponent,
     ListaComponent,
-    ListaBodyComponent
+    ListaBodyComponent,
+    ListaInputComponent,
+    FormularioComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
