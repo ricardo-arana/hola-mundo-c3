@@ -1,0 +1,16 @@
+<div class="m-3">
+    <h1> Saludador 2.0</h1>
+    <div class="control-group"  style="max-width: 300px;">
+        <input class="form-control" #nombreInput  >
+        <button (click)="saludar(nombreInput.value)" class="btn btn-primary mt-2">Saludar</button>
+        <div *ngIf="nombre; then thenBloque else elseBloque"></div>
+
+        <ng-template #thenBloque>
+            <h2>Hola {{ nombre }}</h2>
+        </ng-template>
+        <ng-template #elseBloque>
+            <small>No han ingresado un nombre</small>
+        </ng-template>
+        
+    </div>
+</div>
