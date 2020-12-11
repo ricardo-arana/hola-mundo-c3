@@ -1,0 +1,6 @@
+<ul class="list-group">
+    <li *ngFor="let item of items; index as i" class="list-group-item">
+        {{ item }} 
+        <button class="btn btn-info" (click)="eliminar(i)" > X </button>
+    </li>
+</ul>

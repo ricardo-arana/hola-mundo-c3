@@ -17,4 +17,8 @@ export class ListaComponent implements OnInit {
     console.log(this.items);
   }
 
+  eliminar(index: number) {
+    this.items.splice(index, 1);
+  }
+
 }
