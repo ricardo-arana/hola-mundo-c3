@@ -1,0 +1,8 @@
+<div class="m-3">
+    <div class="group-control" style="max-width: 200px;">
+        <input type="text" class="form-control" placeholder="Ingrese un item" #itemForm (keyup.enter)="agregar(itemForm.value)" >
+        <ul>
+            <li *ngFor="let item of items; index as i">{{i+1}}-{{ item }}</li>
+        </ul>
+    </div>
+</div>
